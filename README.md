@@ -162,7 +162,7 @@ Invoke-RestMethod -Method Get -URI http://xyz.com/api/posts/all | Format-Table
 ```
 and general web request
 ```powershell
-Invoke-WebRequest -Method Get -URI http://trainingxyz.com/api/posts/all | Select-Object -ExpandProperty Content | ConvertFrom-Json | Format-Table
+Invoke-WebRequest -Method Get -URI http://xyz.com/api/posts/all | Select-Object -ExpandProperty Content | ConvertFrom-Json | Format-Table
 ```
 
 
@@ -257,6 +257,7 @@ $NewUser = [ordered]@{FirstName=($TextBox_FName).Text; LastName=($TextBox_LName)
 
 Return $NewUser
 ```
+<img src="gui.png">
 
 -------
 ### Read from csv 
