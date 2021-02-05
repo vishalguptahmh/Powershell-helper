@@ -30,6 +30,7 @@ output
 
 ------
 ### Giving paramter to function from console
+
 ```powershell
  Function advanced2 {
     [CmdletBinding()]Param($Vishal)
@@ -37,9 +38,13 @@ output
 } 
 ```
 run : `advanced2 abc`
+
 out : `abc`
+
 -----
+
 ### Validation in function while accepting paramter
+
 ```powershell
  Function advanced2 {
     [CmdletBinding()]Param(
@@ -51,7 +56,9 @@ out : `abc`
 ```
 
 ------
+
 ### creating dict or hashmap
+
 example 
 
 ```powershell
@@ -76,6 +83,7 @@ Param()
   }
   ```
   ----
+
  ### what if confirm
 
 Function GetSupportProcessExample{
@@ -83,11 +91,16 @@ Function GetSupportProcessExample{
   Remove-Item -Path .\myfile1.txt
 }
 
+<img src="whatif.png">
+
+
+
 More you can read from https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-shouldprocess?view=powershell-7.1
 
 
 -----
-# you can use .net functions
+
+### you can use .net functions
 example 
 ```powershell
 [System.Media.SystemSounds]::Beep.Play()
@@ -95,7 +108,7 @@ example
 or you can search on google for particular class like ".net class System sound"
 
 ----
-# Use can use class in powershell 
+### Use can use class in powershell 
 example 
 ```powershell
 class Wallet
@@ -142,7 +155,7 @@ $ScottWallet.ChargeAccount(216.92)
 ```
 
 -----
-# We can call rest api's also
+### We can call rest api's also
 example :
 ```powershell
 Invoke-RestMethod -Method Get -URI http://xyz.com/api/posts/all | Format-Table
@@ -154,7 +167,7 @@ Invoke-WebRequest -Method Get -URI http://trainingxyz.com/api/posts/all | Select
 
 
 ---
-# output as html
+### output as html
 
 ```powershell
  Function Get-ExpiringPasswords
@@ -186,7 +199,7 @@ Out-File 'C:\Users\DEV\Documents\powershell Learn\output\output.html'
 ```
 
 ----
-# GUI
+### GUI
 
 ```powershell
 Add-Type -AssemblyName System.Windows.Forms
