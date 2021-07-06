@@ -382,3 +382,12 @@ $EmployeeRoster.Save($XMLPath)
 "@ | ConvertFrom-Json | Format-Table
 ```
 
+
+## Related
+
+Here are some more helpful page to read
+
+[Debugging Tips](https://wiki.bash-hackers.org/scripting/debuggingtips)
+
+  
+
